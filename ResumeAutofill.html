@@ -694,8 +694,7 @@
         async function fetchJobDescription(url) {
             const corsProxies = [
                 `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
-                `https://corsproxy.io/?${encodeURIComponent(url)}`,
-                `https://cors-anywhere.herokuapp.com/${url}`
+                `https://corsproxy.io/?${encodeURIComponent(url)}`
             ];
 
             for (let proxyUrl of corsProxies) {
@@ -773,15 +772,25 @@ Respond in JSON format:
             }
 
             const result = await response.json();
+            
+            // Validate response structure
+            if (!result.choices || result.choices.length === 0) {
+                throw new Error('Invalid API response: no choices returned');
+            }
+            
             const content = result.choices[0].message.content;
             
             // Extract JSON from response (handle markdown code blocks)
             const jsonMatch = content.match(/\{[\s\S]*\}/);
             if (jsonMatch) {
-                return JSON.parse(jsonMatch[0]);
+                try {
+                    return JSON.parse(jsonMatch[0]);
+                } catch (e) {
+                    throw new Error('Failed to parse JSON from API response: ' + e.message);
+                }
             }
             
-            throw new Error('Failed to parse API response');
+            throw new Error('No JSON found in API response');
         }
 
         // Analyze and fill
@@ -805,10 +814,10 @@ Respond in JSON format:
                         jobDescription = JSON.stringify(jobDescription);
                     }
                 } catch (e) {
-                    showAlert('Could not fetch job description automatically. Please copy it manually and paste below.', 'error');
-                    const manualInput = prompt('Paste the job description here:');
-                    if (!manualInput) {
+                    const manualInput = prompt('Could not fetch job description automatically.\n\nPlease copy the job description and paste it here:');
+                    if (!manualInput || manualInput.trim() === '') {
                         setLoading(false);
+                        showAlert('Job analysis cancelled - no description provided', 'info');
                         return;
                     }
                     jobDescription = manualInput;
@@ -840,17 +849,20 @@ Respond in JSON format:
 
                 setLoading(false);
                 
-                // Show results
-                let message = `Analysis complete!\nMatching Score: ${analysis.matchingScore}%\n`;
-                if (analysis.atsKeywords) {
-                    message += `\nATS Keywords: ${analysis.atsKeywords.join(', ')}`;
-                }
-                if (analysis.recommendations) {
-                    message += `\n\nRecommendations: ${analysis.recommendations}`;
+                // Show results using custom alert
+                let message = `✅ Analysis complete! Matching Score: ${analysis.matchingScore}%`;
+                if (analysis.atsKeywords && analysis.atsKeywords.length > 0) {
+                    message += ` | ATS Keywords added: ${analysis.atsKeywords.slice(0, 5).join(', ')}${analysis.atsKeywords.length > 5 ? '...' : ''}`;
                 }
                 
-                alert(message);
-                showAlert('Resume optimized successfully!', 'success');
+                showAlert(message, 'success');
+                
+                // Show detailed recommendations if available
+                if (analysis.recommendations) {
+                    setTimeout(() => {
+                        showAlert('💡 Recommendation: ' + analysis.recommendations, 'info');
+                    }, 3000);
+                }
 
             } catch (error) {
                 setLoading(false);
@@ -992,7 +1004,13 @@ Respond in JSON format:
 // @version      1.0
 // @description  Auto-fill resume data on job application forms
 // @author       You
-// @match        *://*/*
+// @match        *://*.greenhouse.io/*
+// @match        *://*.lever.co/*
+// @match        *://*.workday.com/*
+// @match        *://*.taleo.net/*
+// @match        *://*.icims.com/*
+// @match        *://*.myworkdayjobs.com/*
+// Note: Add more @match patterns for specific job sites you use
 // @grant        none
 // ==/UserScript==
 
