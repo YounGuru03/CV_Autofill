@@ -1,0 +1,158 @@
+[
+  {
+    "question": "How would you handle a situation where a project deadline is at risk?",
+    "type": "situational",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Assess the situation and identify blockers",
+      "Communicate early with stakeholders",
+      "Prioritize critical features",
+      "Consider resource reallocation",
+      "Propose realistic solutions"
+    ]
+  },
+  {
+    "question": "A stakeholder wants a feature that conflicts with the product roadmap. What do you do?",
+    "type": "situational",
+    "role": "product-manager",
+    "difficulty": "mid",
+    "tips": [
+      "Listen to understand their needs",
+      "Explain the roadmap rationale",
+      "Look for win-win solutions",
+      "Use data to support decisions",
+      "Know when to escalate"
+    ]
+  },
+  {
+    "question": "You discover a critical bug in production right before the weekend. What's your approach?",
+    "type": "situational",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": [
+      "Assess severity and impact",
+      "Alert relevant stakeholders",
+      "Determine if immediate fix is needed",
+      "Consider rollback vs hotfix",
+      "Document and plan for prevention"
+    ]
+  },
+  {
+    "question": "How would you prioritize features when multiple stakeholders have conflicting requests?",
+    "type": "situational",
+    "role": "product-manager",
+    "difficulty": "senior",
+    "tips": [
+      "Use a prioritization framework (RICE, MoSCoW)",
+      "Consider business value and user impact",
+      "Gather data to support decisions",
+      "Communicate trade-offs clearly",
+      "Build consensus through transparency"
+    ]
+  },
+  {
+    "question": "Your team member consistently misses deadlines. How do you address this?",
+    "type": "situational",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Have a private conversation first",
+      "Understand root causes",
+      "Be empathetic but clear about expectations",
+      "Offer support and resources",
+      "Set clear goals and follow up"
+    ]
+  },
+  {
+    "question": "You notice a team member is struggling but hasn't asked for help. What do you do?",
+    "type": "situational",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Approach them privately and supportively",
+      "Make it safe to ask for help",
+      "Offer specific assistance",
+      "Check in regularly",
+      "Foster team collaboration culture"
+    ]
+  },
+  {
+    "question": "How would you handle receiving negative feedback from a client or customer?",
+    "type": "situational",
+    "role": "general",
+    "difficulty": "junior",
+    "tips": [
+      "Listen without being defensive",
+      "Thank them for the feedback",
+      "Clarify and understand the issue",
+      "Propose solutions",
+      "Follow up to ensure satisfaction"
+    ]
+  },
+  {
+    "question": "A marketing campaign you're running isn't performing well. What's your next step?",
+    "type": "situational",
+    "role": "marketing",
+    "difficulty": "mid",
+    "tips": [
+      "Analyze data to identify issues",
+      "A/B test variations",
+      "Review targeting and messaging",
+      "Consider budget reallocation",
+      "Learn and document findings"
+    ]
+  },
+  {
+    "question": "You're asked to design a feature you believe will harm user experience. How do you respond?",
+    "type": "situational",
+    "role": "designer",
+    "difficulty": "senior",
+    "tips": [
+      "Understand the business reasoning",
+      "Present UX concerns with data/research",
+      "Propose alternative solutions",
+      "Advocate for users respectfully",
+      "Be willing to test and learn"
+    ]
+  },
+  {
+    "question": "How would you onboard a new team member in a remote work environment?",
+    "type": "situational",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Create structured onboarding plan",
+      "Schedule regular check-ins",
+      "Pair them with a buddy",
+      "Provide clear documentation",
+      "Make them feel part of the team"
+    ]
+  },
+  {
+    "question": "Your analysis shows results that contradict leadership's expectations. What do you do?",
+    "type": "situational",
+    "role": "data-scientist",
+    "difficulty": "senior",
+    "tips": [
+      "Double-check your analysis",
+      "Present findings objectively",
+      "Use clear data visualization",
+      "Be prepared with recommendations",
+      "Maintain professional integrity"
+    ]
+  },
+  {
+    "question": "A customer wants a custom solution that would require significant engineering effort. How do you handle it?",
+    "type": "situational",
+    "role": "sales",
+    "difficulty": "mid",
+    "tips": [
+      "Understand their underlying need",
+      "Assess feasibility and resources",
+      "Consider revenue vs cost",
+      "Explore alternative solutions",
+      "Collaborate with product/engineering"
+    ]
+  }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "question": "Explain the difference between == and === in JavaScript.",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "junior",
+    "tips": {
+      "approach": "Explain type coercion vs strict equality, then provide examples.",
+      "keyPoints": [
+        "== performs type coercion before comparison",
+        "=== checks both value and type",
+        "=== is generally preferred for predictable behavior"
+      ],
+      "example": "5 == '5' is true, but 5 === '5' is false"
+    }
+  },
+  {
+    "question": "What is the difference between SQL and NoSQL databases? When would you use each?",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Compare structure, scalability, consistency, and use cases.",
+      "keyPoints": [
+        "SQL: Structured, ACID compliance, relationships",
+        "NoSQL: Flexible schema, horizontal scaling, eventual consistency",
+        "Consider data structure, scale, and consistency requirements"
+      ]
+    }
+  },
+  {
+    "question": "Explain the concept of closures in JavaScript with an example.",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Define closure, explain lexical scoping, show practical example.",
+      "keyPoints": [
+        "Functions have access to outer scope variables",
+        "Inner function 'closes over' outer variables",
+        "Common in callbacks, event handlers, data privacy"
+      ],
+      "example": "function outer() { let x = 10; return function() { return x; }; }"
+    }
+  },
+  {
+    "question": "Design a URL shortening service like bit.ly. What are the key components and considerations?",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "senior",
+    "tips": {
+      "approach": "Discuss architecture, database design, key generation, and scalability.",
+      "keyPoints": [
+        "Hash function or counter for generating short codes",
+        "Database schema: URL mapping, analytics",
+        "Caching strategy for popular URLs",
+        "Handling collisions and custom aliases",
+        "Rate limiting and security"
+      ]
+    }
+  },
+  {
+    "question": "What is time complexity? Explain Big O notation with examples.",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "junior",
+    "tips": {
+      "approach": "Define time complexity, explain Big O, give common examples.",
+      "keyPoints": [
+        "Measures algorithm efficiency as input grows",
+        "Common: O(1), O(log n), O(n), O(n log n), O(n²)",
+        "Ignore constants and lower-order terms"
+      ],
+      "example": "Array lookup is O(1), linear search is O(n), bubble sort is O(n²)"
+    }
+  },
+  {
+    "question": "Explain the concept of machine learning model overfitting and how to prevent it.",
+    "type": "technical",
+    "role": "data-scientist",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Define overfitting, explain causes, discuss prevention techniques.",
+      "keyPoints": [
+        "Model learns training data too well, poor generalization",
+        "Prevention: regularization, cross-validation, more data",
+        "Monitor training vs validation error"
+      ]
+    }
+  },
+  {
+    "question": "What is the difference between supervised and unsupervised learning?",
+    "type": "technical",
+    "role": "data-scientist",
+    "difficulty": "junior",
+    "tips": {
+      "approach": "Define both, compare use cases, give examples of each.",
+      "keyPoints": [
+        "Supervised: labeled data, prediction tasks",
+        "Unsupervised: unlabeled data, pattern discovery",
+        "Examples: classification vs clustering"
+      ],
+      "example": "Spam detection (supervised) vs customer segmentation (unsupervised)"
+    }
+  },
+  {
+    "question": "How would you explain A/B testing to a non-technical stakeholder?",
+    "type": "technical",
+    "role": "data-scientist",
+    "difficulty": "junior",
+    "tips": {
+      "approach": "Use simple analogy, explain process, mention benefits.",
+      "keyPoints": [
+        "Compare two versions to see which performs better",
+        "Random assignment to groups",
+        "Statistical significance determines winner"
+      ],
+      "example": "Like testing two store layouts to see which generates more sales"
+    }
+  },
+  {
+    "question": "What design patterns are you familiar with? Explain one in detail.",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Name several patterns, explain one thoroughly with use case.",
+      "keyPoints": [
+        "Common patterns: Singleton, Factory, Observer, Strategy",
+        "Explain problem it solves",
+        "Provide code structure or example"
+      ]
+    }
+  },
+  {
+    "question": "Explain RESTful API design principles and best practices.",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Cover HTTP methods, resource naming, status codes, versioning.",
+      "keyPoints": [
+        "Use HTTP methods appropriately (GET, POST, PUT, DELETE)",
+        "Resource-based URLs, not action-based",
+        "Proper status codes (200, 201, 404, 500)",
+        "Stateless, cacheable, versioned"
+      ]
+    }
+  },
+  {
+    "question": "How would you optimize a slow database query?",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "mid",
+    "tips": {
+      "approach": "Discuss analysis tools, then optimization techniques.",
+      "keyPoints": [
+        "Use EXPLAIN to analyze query execution",
+        "Add appropriate indexes",
+        "Optimize JOINs and WHERE clauses",
+        "Consider query caching",
+        "Database-specific optimizations"
+      ]
+    }
+  },
+  {
+    "question": "What is the CAP theorem and how does it apply to distributed systems?",
+    "type": "technical",
+    "role": "software-engineer",
+    "difficulty": "senior",
+    "tips": {
+      "approach": "Define CAP, explain trade-offs, give real-world examples.",
+      "keyPoints": [
+        "Consistency, Availability, Partition tolerance",
+        "Can only guarantee 2 of 3",
+        "Most systems choose AP or CP"
+      ],
+      "example": "MongoDB (CP), Cassandra (AP)"
+    }
+  }
+]
