@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Matcher - Gap Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Skill Matcher</h1>
+            <p class="subtitle">Identify skill gaps and get personalized learning recommendations</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="your-skills-card">
+                    <h2>Your Current Skills</h2>
+                    <textarea id="yourSkills" placeholder="Enter your skills (e.g., JavaScript, Python, React, Leadership, Communication)&#10;One per line or comma-separated"></textarea>
+                    <button id="importResumeBtn" class="btn btn-secondary">
+                        📄 Import from Resume
+                    </button>
+                </div>
+
+                <div class="job-skills-card">
+                    <h2>Job Requirements</h2>
+                    <textarea id="jobRequirements" placeholder="Paste job description or list required skills..."></textarea>
+                    <div class="quick-roles">
+                        <p>Quick select common roles:</p>
+                        <button class="role-btn" data-role="software-engineer">Software Engineer</button>
+                        <button class="role-btn" data-role="data-scientist">Data Scientist</button>
+                        <button class="role-btn" data-role="product-manager">Product Manager</button>
+                        <button class="role-btn" data-role="designer">UX Designer</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analyze-section">
+                <button id="analyzeBtn" class="btn btn-primary btn-large">
+                    Analyze Skill Gap
+                </button>
+            </div>
+
+            <div id="results" class="results-section" style="display: none;">
+                <div class="match-score-card">
+                    <h2>Match Score</h2>
+                    <div class="score-circle">
+                        <svg viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="90" class="score-bg"></circle>
+                            <circle id="scoreCircle" cx="100" cy="100" r="90" class="score-fg"></circle>
+                        </svg>
+                        <div class="score-text">
+                            <span id="scoreValue">0</span>
+                            <span class="score-label">%</span>
+                        </div>
+                    </div>
+                    <p id="scoreDescription" class="score-desc"></p>
+                </div>
+
+                <div class="skills-breakdown">
+                    <div class="breakdown-card">
+                        <h3>✅ Skills You Have</h3>
+                        <div id="matchedSkills" class="skill-tags"></div>
+                    </div>
+
+                    <div class="breakdown-card gap-card">
+                        <h3>📚 Skills to Learn</h3>
+                        <div id="missingSkills" class="skill-tags"></div>
+                    </div>
+
+                    <div class="breakdown-card">
+                        <h3>⭐ Bonus Skills</h3>
+                        <div id="bonusSkills" class="skill-tags"></div>
+                        <p class="hint">Skills you have that aren't required but add value</p>
+                    </div>
+                </div>
+
+                <div class="learning-path-section">
+                    <h2>📖 Personalized Learning Path</h2>
+                    <div id="learningPath" class="learning-grid"></div>
+                </div>
+
+                <div class="resources-section">
+                    <h2>🔗 Recommended Resources</h2>
+                    <div id="resources" class="resources-grid"></div>
+                </div>
+
+                <div class="actions-footer">
+                    <button id="exportBtn" class="btn btn-secondary">📄 Export Plan</button>
+                    <button id="saveBtn" class="btn btn-secondary">💾 Save Analysis</button>
+                </div>
+            </div>
+
+            <div class="skills-database-section">
+                <h3>💡 Popular Skills by Category</h3>
+                <div class="skills-categories">
+                    <div class="category-card">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Go</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <h4>Frameworks & Libraries</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Spring</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <h4>Cloud & DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">GCP</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <h4>Soft Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Project Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. Skill Up.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

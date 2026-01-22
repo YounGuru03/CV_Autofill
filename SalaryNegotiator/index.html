@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Negotiator - Know Your Worth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Salary Negotiator</h1>
+            <p class="subtitle">Research fair compensation and prepare for negotiation</p>
+        </header>
+
+        <main>
+            <div class="calculator-section">
+                <div class="input-card">
+                    <h2>Your Information</h2>
+                    
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" placeholder="e.g., Software Engineer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Years of Experience</label>
+                        <input type="number" id="experience" value="3" min="0" max="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="high">High Cost (SF, NYC, Seattle)</option>
+                            <option value="medium" selected>Medium Cost (Austin, Denver, Boston)</option>
+                            <option value="low">Low Cost (Remote, Other Cities)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Education Level</label>
+                        <select id="education">
+                            <option value="bachelors" selected>Bachelor's Degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                            <option value="bootcamp">Bootcamp/Self-taught</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companySize">Company Size</label>
+                        <select id="companySize">
+                            <option value="startup">Startup (< 50)</option>
+                            <option value="small">Small (50-500)</option>
+                            <option value="medium" selected>Medium (500-5000)</option>
+                            <option value="large">Large (5000+)</option>
+                        </select>
+                    </div>
+
+                    <button id="calculateBtn" class="btn btn-primary btn-large">
+                        Calculate Fair Salary
+                    </button>
+                </div>
+
+                <div id="results" class="results-card" style="display: none;">
+                    <h2>Salary Estimate</h2>
+                    
+                    <div class="salary-range">
+                        <div class="range-bar">
+                            <div class="range-fill"></div>
+                            <div class="range-markers">
+                                <span class="marker min">$<span id="minSalary">0</span></span>
+                                <span class="marker median">$<span id="medianSalary">0</span></span>
+                                <span class="marker max">$<span id="maxSalary">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="salary-breakdown">
+                        <div class="breakdown-item">
+                            <span class="label">25th Percentile</span>
+                            <span class="value">$<span id="p25">0</span></span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="label">Median (50th)</span>
+                            <span class="value highlight">$<span id="p50">0</span></span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="label">75th Percentile</span>
+                            <span class="value">$<span id="p75">0</span></span>
+                        </div>
+                    </div>
+
+                    <div class="total-comp">
+                        <h3>Total Compensation Estimate</h3>
+                        <div class="comp-breakdown">
+                            <div class="comp-item">
+                                <span>Base Salary</span>
+                                <span id="baseSalary">$0</span>
+                            </div>
+                            <div class="comp-item">
+                                <span>Bonus (15%)</span>
+                                <span id="bonus">$0</span>
+                            </div>
+                            <div class="comp-item">
+                                <span>Equity/RSU (est.)</span>
+                                <span id="equity">$0</span>
+                            </div>
+                            <div class="comp-item total">
+                                <span><strong>Total Comp</strong></span>
+                                <span id="totalComp"><strong>$0</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="negotiation" class="negotiation-section" style="display: none;">
+                <h2>🎯 Negotiation Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Do Your Research</h4>
+                        <p>Use salary data from multiple sources. Know the market rate for your role and location.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Consider Total Comp</h4>
+                        <p>Salary is just one part. Factor in bonus, equity, benefits, and work-life balance.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Be Confident</h4>
+                        <p>Present your value clearly. Use specific examples of your achievements.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Be Flexible</h4>
+                        <p>If salary is fixed, negotiate other terms: signing bonus, equity, vacation, remote work.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Get It in Writing</h4>
+                        <p>Always get the final offer in writing before accepting.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Stay Professional</h4>
+                        <p>Be polite and thankful throughout. Negotiation is expected and normal.</p>
+                    </div>
+                </div>
+
+                <div class="email-template">
+                    <h3>📧 Email Template</h3>
+                    <textarea id="emailTemplate" readonly></textarea>
+                    <button id="copyEmailBtn" class="btn btn-secondary">Copy Template</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. Know Your Worth.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
