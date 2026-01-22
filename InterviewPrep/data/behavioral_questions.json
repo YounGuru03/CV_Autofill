@@ -1,0 +1,184 @@
+[
+  {
+    "question": "Tell me about a time when you faced a significant challenge at work. How did you handle it?",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Use the STAR method: Situation, Task, Action, Result",
+      "Be specific with details and outcomes",
+      "Focus on YOUR actions, not the team's",
+      "Quantify the results if possible",
+      "Show what you learned from the experience"
+    ]
+  },
+  {
+    "question": "Describe a situation where you had to work with a difficult team member. How did you handle it?",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Stay professional - don't badmouth anyone",
+      "Focus on the behavior, not the person",
+      "Explain your approach to resolution",
+      "Highlight communication and empathy",
+      "Share the positive outcome"
+    ]
+  },
+  {
+    "question": "Give an example of a time when you had to learn a new technology or skill quickly.",
+    "type": "behavioral",
+    "role": "software-engineer",
+    "difficulty": "junior",
+    "tips": [
+      "Explain the context and why it was necessary",
+      "Describe your learning approach",
+      "Mention resources used (docs, courses, mentors)",
+      "Show the application and results",
+      "Demonstrate adaptability and growth mindset"
+    ]
+  },
+  {
+    "question": "Tell me about a time when you failed. What did you learn from it?",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Choose a real failure, but not catastrophic",
+      "Take ownership - don't blame others",
+      "Focus heavily on lessons learned",
+      "Show how you applied those lessons later",
+      "Demonstrate growth and self-awareness"
+    ]
+  },
+  {
+    "question": "Describe a time when you had to prioritize multiple tasks with tight deadlines.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Explain your prioritization framework",
+      "Mention stakeholder communication",
+      "Show organizational skills",
+      "Discuss trade-offs you made",
+      "Highlight successful delivery"
+    ]
+  },
+  {
+    "question": "Tell me about a time when you disagreed with your manager. How did you handle it?",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "senior",
+    "tips": [
+      "Show respect for authority while being assertive",
+      "Explain your reasoning clearly",
+      "Discuss how you presented your perspective",
+      "Show willingness to compromise or accept decision",
+      "Focus on professional communication"
+    ]
+  },
+  {
+    "question": "Give an example of when you went above and beyond your job responsibilities.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Choose an example that shows initiative",
+      "Explain your motivation",
+      "Describe the extra effort you put in",
+      "Quantify the impact if possible",
+      "Show alignment with company goals"
+    ]
+  },
+  {
+    "question": "Describe a situation where you had to influence others without direct authority.",
+    "type": "behavioral",
+    "role": "product-manager",
+    "difficulty": "senior",
+    "tips": [
+      "Emphasize relationship building",
+      "Explain your persuasion strategy",
+      "Show data-driven or logical approach",
+      "Highlight communication skills",
+      "Demonstrate leadership"
+    ]
+  },
+  {
+    "question": "Tell me about a time when you received critical feedback. How did you respond?",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Show openness to feedback",
+      "Avoid defensiveness",
+      "Explain how you processed it",
+      "Describe actions taken to improve",
+      "Demonstrate growth mindset"
+    ]
+  },
+  {
+    "question": "Describe a project where you had to collaborate with multiple departments.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Highlight cross-functional communication",
+      "Explain coordination challenges",
+      "Show adaptability to different working styles",
+      "Mention conflict resolution if applicable",
+      "Focus on successful collaboration outcomes"
+    ]
+  },
+  {
+    "question": "Give an example of when you improved a process or system at work.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Explain what was wrong with the old process",
+      "Describe your analysis and solution",
+      "Show stakeholder buy-in",
+      "Quantify improvements (time, cost, quality)",
+      "Mention sustainability of the change"
+    ]
+  },
+  {
+    "question": "Tell me about a time when you had to make a decision with incomplete information.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "senior",
+    "tips": [
+      "Explain the context and urgency",
+      "Describe how you gathered available info",
+      "Show your decision-making framework",
+      "Discuss risk assessment",
+      "Share the outcome and lessons"
+    ]
+  },
+  {
+    "question": "Describe a situation where you mentored or helped develop someone on your team.",
+    "type": "behavioral",
+    "role": "senior",
+    "difficulty": "senior",
+    "tips": [
+      "Show investment in others' growth",
+      "Explain your mentoring approach",
+      "Give specific examples of guidance",
+      "Highlight their improvement",
+      "Demonstrate leadership qualities"
+    ]
+  },
+  {
+    "question": "Tell me about a time when you had to adapt to a significant change at work.",
+    "type": "behavioral",
+    "role": "general",
+    "difficulty": "mid",
+    "tips": [
+      "Describe the change and its impact",
+      "Show flexibility and positive attitude",
+      "Explain your adaptation strategy",
+      "Mention support you provided to others",
+      "Focus on successful transition"
+    ]
+  }
+]

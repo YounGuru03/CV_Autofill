@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Tracker - Organize Your Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Job Search Tracker</h1>
+            <p class="subtitle">Track applications, interviews, and offers in one place</p>
+        </header>
+
+        <main>
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalApps">0</div>
+                    <div class="stat-label">Total Applications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="interviews">0</div>
+                    <div class="stat-label">Interviews</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="offers">0</div>
+                    <div class="stat-label">Offers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="responseRate">0%</div>
+                    <div class="stat-label">Response Rate</div>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <button id="addJobBtn" class="btn btn-primary">+ Add Application</button>
+                <div class="filters">
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="applied">Applied</option>
+                        <option value="screening">Screening</option>
+                        <option value="interview">Interview</option>
+                        <option value="offer">Offer</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                    <input type="text" id="searchInput" placeholder="Search companies...">
+                </div>
+                <div class="actions">
+                    <button id="exportBtn" class="btn btn-secondary">📄 Export</button>
+                    <button id="clearBtn" class="btn btn-secondary">🗑️ Clear All</button>
+                </div>
+            </div>
+
+            <div id="jobsTable" class="jobs-table"></div>
+
+            <div id="addJobModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add Job Application</h2>
+                    <form id="addJobForm">
+                        <div class="form-group">
+                            <label for="company">Company *</label>
+                            <input type="text" id="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Position *</label>
+                            <input type="text" id="position" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="e.g., Remote, San Francisco">
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Salary Range</label>
+                            <input type="text" id="salary" placeholder="e.g., $80k-$120k">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status *</label>
+                            <select id="status" required>
+                                <option value="applied">Applied</option>
+                                <option value="screening">Screening</option>
+                                <option value="interview">Interview</option>
+                                <option value="offer">Offer</option>
+                                <option value="rejected">Rejected</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appliedDate">Applied Date</label>
+                            <input type="date" id="appliedDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="jobUrl">Job URL</label>
+                            <input type="url" id="jobUrl" placeholder="https://...">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" rows="3"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. Track Your Journey.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

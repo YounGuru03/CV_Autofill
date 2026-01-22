@@ -1,0 +1,411 @@
+{
+  "technology": [
+    {
+      "id": "software-engineer",
+      "name": "Software Engineer",
+      "levels": [
+        {
+          "title": "Junior Software Engineer",
+          "description": "Entry-level position focusing on learning and contributing to codebases under supervision",
+          "salary": { "min": 60000, "max": 85000, "avg": 72500 },
+          "duration": 2,
+          "requirements": [
+            "Bachelor's degree in Computer Science or related field",
+            "Basic programming skills in one or more languages",
+            "Understanding of data structures and algorithms",
+            "Familiarity with version control (Git)",
+            "Eagerness to learn and grow"
+          ],
+          "skills": {
+            "technical": ["JavaScript", "Python", "Git", "SQL", "HTML/CSS"],
+            "soft": ["Communication", "Teamwork", "Problem-solving", "Adaptability"]
+          }
+        },
+        {
+          "title": "Mid-Level Software Engineer",
+          "description": "Independently develop features, participate in code reviews, and contribute to system design",
+          "salary": { "min": 80000, "max": 120000, "avg": 100000 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years of professional experience",
+            "Proficiency in multiple programming languages",
+            "Understanding of system design principles",
+            "Experience with testing frameworks",
+            "Strong debugging and problem-solving skills"
+          ],
+          "skills": {
+            "technical": ["React", "Node.js", "AWS", "Docker", "REST APIs", "Testing"],
+            "soft": ["Time management", "Communication", "Collaboration", "Technical writing"]
+          }
+        },
+        {
+          "title": "Senior Software Engineer",
+          "description": "Lead technical projects, mentor junior engineers, and drive architectural decisions",
+          "salary": { "min": 120000, "max": 180000, "avg": 150000 },
+          "duration": 3,
+          "requirements": [
+            "5-8 years of experience",
+            "Deep expertise in specific domain",
+            "Proven track record of successful projects",
+            "Strong code review and mentoring skills",
+            "System architecture experience"
+          ],
+          "skills": {
+            "technical": ["Microservices", "System Design", "Performance Optimization", "Security"],
+            "soft": ["Leadership", "Strategic thinking", "Conflict resolution"],
+            "leadership": ["Mentoring", "Technical leadership", "Decision making"]
+          }
+        },
+        {
+          "title": "Staff/Principal Engineer",
+          "description": "Define technical strategy across teams and influence organization-wide technical decisions",
+          "salary": { "min": 180000, "max": 250000, "avg": 215000 },
+          "duration": 4,
+          "requirements": [
+            "8+ years of experience",
+            "Demonstrated technical leadership across teams",
+            "Strategic thinking and vision",
+            "Industry thought leadership",
+            "Strong communication with executives"
+          ],
+          "skills": {
+            "technical": ["Architecture", "Scalability", "Distributed Systems", "Cloud Infrastructure"],
+            "leadership": ["Technical strategy", "Cross-functional leadership", "Innovation", "Influence"]
+          }
+        },
+        {
+          "title": "Engineering Director",
+          "description": "Manage engineering teams, set departmental strategy, and align technical work with business goals",
+          "salary": { "min": 200000, "max": 300000, "avg": 250000 },
+          "duration": 5,
+          "requirements": [
+            "10+ years of experience",
+            "Management experience",
+            "Budget and resource planning",
+            "Hiring and team building",
+            "Business acumen"
+          ],
+          "skills": {
+            "leadership": ["People management", "Strategic planning", "Budgeting", "Hiring"],
+            "soft": ["Executive communication", "Stakeholder management", "Change management"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend-engineer",
+      "name": "Frontend Engineer",
+      "levels": [
+        {
+          "title": "Junior Frontend Developer",
+          "description": "Build user interfaces and implement designs under guidance",
+          "salary": { "min": 55000, "max": 75000, "avg": 65000 },
+          "duration": 2,
+          "requirements": [
+            "HTML, CSS, JavaScript fundamentals",
+            "Basic React or Vue knowledge",
+            "Responsive design principles",
+            "Git version control"
+          ],
+          "skills": {
+            "technical": ["HTML", "CSS", "JavaScript", "React", "Responsive Design"],
+            "soft": ["Attention to detail", "Communication", "Collaboration"]
+          }
+        },
+        {
+          "title": "Frontend Engineer",
+          "description": "Build complex UIs, optimize performance, and collaborate with designers",
+          "salary": { "min": 75000, "max": 110000, "avg": 92500 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years experience",
+            "Expert in modern frameworks",
+            "Cross-browser compatibility",
+            "Performance optimization",
+            "Accessibility standards"
+          ],
+          "skills": {
+            "technical": ["TypeScript", "React/Vue", "CSS-in-JS", "Build tools", "Testing"],
+            "soft": ["Design collaboration", "User empathy", "Problem-solving"]
+          }
+        },
+        {
+          "title": "Senior Frontend Engineer",
+          "description": "Lead frontend architecture, mentor team, and drive technical excellence",
+          "salary": { "min": 110000, "max": 160000, "avg": 135000 },
+          "duration": 3,
+          "requirements": [
+            "5+ years experience",
+            "Frontend architecture expertise",
+            "Component library design",
+            "Performance profiling",
+            "Mentoring skills"
+          ],
+          "skills": {
+            "technical": ["Architecture", "State Management", "Web Performance", "PWA"],
+            "leadership": ["Technical leadership", "Mentoring", "Code review"]
+          }
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": "data-scientist",
+      "name": "Data Scientist",
+      "levels": [
+        {
+          "title": "Junior Data Scientist",
+          "description": "Analyze data, build basic models, and support senior data scientists",
+          "salary": { "min": 65000, "max": 90000, "avg": 77500 },
+          "duration": 2,
+          "requirements": [
+            "Bachelor's in Statistics, Math, CS, or related field",
+            "Python or R programming",
+            "Statistics and probability",
+            "SQL proficiency",
+            "Basic machine learning knowledge"
+          ],
+          "skills": {
+            "technical": ["Python", "SQL", "Pandas", "Scikit-learn", "Statistics"],
+            "soft": ["Analytical thinking", "Communication", "Curiosity"]
+          }
+        },
+        {
+          "title": "Data Scientist",
+          "description": "Develop ML models, conduct experiments, and deliver insights to stakeholders",
+          "salary": { "min": 90000, "max": 130000, "avg": 110000 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years experience",
+            "Advanced statistics and ML",
+            "Feature engineering",
+            "Model evaluation",
+            "Business communication"
+          ],
+          "skills": {
+            "technical": ["Machine Learning", "Deep Learning", "TensorFlow", "A/B Testing", "Data Visualization"],
+            "soft": ["Storytelling", "Business acumen", "Collaboration"]
+          }
+        },
+        {
+          "title": "Senior Data Scientist",
+          "description": "Lead data science projects, mentor team, and drive ML strategy",
+          "salary": { "min": 130000, "max": 180000, "avg": 155000 },
+          "duration": 3,
+          "requirements": [
+            "5+ years experience",
+            "Advanced ML and statistical methods",
+            "Project leadership",
+            "Cross-functional collaboration",
+            "Research publications (preferred)"
+          ],
+          "skills": {
+            "technical": ["Advanced ML", "NLP", "Computer Vision", "MLOps", "Big Data"],
+            "leadership": ["Project leadership", "Mentoring", "Strategic thinking"]
+          }
+        }
+      ]
+    }
+  ],
+  "design": [
+    {
+      "id": "ux-designer",
+      "name": "UX/UI Designer",
+      "levels": [
+        {
+          "title": "Junior UX Designer",
+          "description": "Create wireframes, conduct user research, and support senior designers",
+          "salary": { "min": 50000, "max": 70000, "avg": 60000 },
+          "duration": 2,
+          "requirements": [
+            "Design portfolio",
+            "Figma or Sketch proficiency",
+            "Basic UX principles",
+            "User research fundamentals",
+            "Communication skills"
+          ],
+          "skills": {
+            "technical": ["Figma", "Wireframing", "Prototyping", "User Research"],
+            "soft": ["Empathy", "Communication", "Collaboration", "Creativity"]
+          }
+        },
+        {
+          "title": "UX Designer",
+          "description": "Design user experiences, conduct research, and collaborate with product teams",
+          "salary": { "min": 70000, "max": 100000, "avg": 85000 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years experience",
+            "Strong portfolio",
+            "User research methods",
+            "Design systems knowledge",
+            "Usability testing"
+          ],
+          "skills": {
+            "technical": ["UI Design", "Interaction Design", "Usability Testing", "Design Systems"],
+            "soft": ["User empathy", "Presentation", "Stakeholder management"]
+          }
+        },
+        {
+          "title": "Senior UX Designer",
+          "description": "Lead design projects, establish design systems, and mentor designers",
+          "salary": { "min": 100000, "max": 140000, "avg": 120000 },
+          "duration": 3,
+          "requirements": [
+            "5+ years experience",
+            "Design leadership",
+            "Design system expertise",
+            "Strategic thinking",
+            "Team mentoring"
+          ],
+          "skills": {
+            "technical": ["Design Strategy", "Design Systems", "Accessibility", "Animation"],
+            "leadership": ["Design leadership", "Mentoring", "Strategic design"]
+          }
+        }
+      ]
+    }
+  ],
+  "business": [
+    {
+      "id": "product-manager",
+      "name": "Product Manager",
+      "levels": [
+        {
+          "title": "Associate Product Manager",
+          "description": "Support product initiatives, gather requirements, and learn product management",
+          "salary": { "min": 60000, "max": 85000, "avg": 72500 },
+          "duration": 2,
+          "requirements": [
+            "Bachelor's degree",
+            "Analytical skills",
+            "Communication abilities",
+            "Basic technical understanding",
+            "User-focused mindset"
+          ],
+          "skills": {
+            "technical": ["SQL basics", "Analytics tools", "Roadmapping"],
+            "soft": ["Communication", "Organization", "Stakeholder management"]
+          }
+        },
+        {
+          "title": "Product Manager",
+          "description": "Own product features, define roadmap, and work cross-functionally",
+          "salary": { "min": 90000, "max": 130000, "avg": 110000 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years experience",
+            "Product strategy",
+            "Data-driven decision making",
+            "Cross-functional leadership",
+            "Market analysis"
+          ],
+          "skills": {
+            "technical": ["Analytics", "A/B Testing", "Prioritization frameworks"],
+            "soft": ["Leadership", "Communication", "Influence", "Negotiation"]
+          }
+        },
+        {
+          "title": "Senior Product Manager",
+          "description": "Lead product strategy, manage complex initiatives, and mentor PMs",
+          "salary": { "min": 130000, "max": 180000, "avg": 155000 },
+          "duration": 3,
+          "requirements": [
+            "5+ years experience",
+            "Strategic product vision",
+            "Team leadership",
+            "P&L management",
+            "Executive communication"
+          ],
+          "skills": {
+            "technical": ["Product strategy", "Metrics design", "Market analysis"],
+            "leadership": ["Strategic thinking", "Team leadership", "Influence"]
+          }
+        }
+      ]
+    }
+  ],
+  "marketing": [
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing Manager",
+      "levels": [
+        {
+          "title": "Marketing Coordinator",
+          "description": "Execute marketing campaigns and support marketing initiatives",
+          "salary": { "min": 40000, "max": 55000, "avg": 47500 },
+          "duration": 2,
+          "requirements": [
+            "Bachelor's in Marketing or related field",
+            "Social media knowledge",
+            "Content creation",
+            "Analytics basics",
+            "Communication skills"
+          ],
+          "skills": {
+            "technical": ["Social Media", "Email Marketing", "Google Analytics", "Content Creation"],
+            "soft": ["Creativity", "Organization", "Communication"]
+          }
+        },
+        {
+          "title": "Marketing Manager",
+          "description": "Lead marketing campaigns, analyze performance, and manage budgets",
+          "salary": { "min": 60000, "max": 90000, "avg": 75000 },
+          "duration": 3,
+          "requirements": [
+            "3-5 years experience",
+            "Campaign management",
+            "Budget management",
+            "Team leadership",
+            "Data analysis"
+          ],
+          "skills": {
+            "technical": ["SEO/SEM", "Marketing Automation", "CRM", "Analytics"],
+            "soft": ["Leadership", "Strategic thinking", "Communication"]
+          }
+        }
+      ]
+    }
+  ],
+  "finance": [
+    {
+      "id": "financial-analyst",
+      "name": "Financial Analyst",
+      "levels": [
+        {
+          "title": "Junior Financial Analyst",
+          "description": "Analyze financial data and support senior analysts",
+          "salary": { "min": 55000, "max": 70000, "avg": 62500 },
+          "duration": 2,
+          "requirements": [
+            "Bachelor's in Finance, Accounting, or Economics",
+            "Excel proficiency",
+            "Financial modeling basics",
+            "Analytical skills"
+          ],
+          "skills": {
+            "technical": ["Excel", "Financial Modeling", "SQL", "Tableau"],
+            "soft": ["Analytical thinking", "Attention to detail", "Communication"]
+          }
+        },
+        {
+          "title": "Financial Analyst",
+          "description": "Conduct financial analysis, build models, and provide insights",
+          "salary": { "min": 70000, "max": 95000, "avg": 82500 },
+          "duration": 3,
+          "requirements": [
+            "2-5 years experience",
+            "Advanced Excel and modeling",
+            "Forecasting expertise",
+            "Business acumen"
+          ],
+          "skills": {
+            "technical": ["Advanced Excel", "Financial Modeling", "BI Tools", "Python"],
+            "soft": ["Business acumen", "Communication", "Problem-solving"]
+          }
+        }
+      ]
+    }
+  ]
+}

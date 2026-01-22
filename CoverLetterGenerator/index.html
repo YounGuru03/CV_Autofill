@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator - AI-Powered</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✉️ Cover Letter Generator</h1>
+            <p class="subtitle">Create personalized cover letters with AI assistance</p>
+        </header>
+
+        <main>
+            <form id="coverLetterForm" class="form-section">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Your Full Name *</label>
+                        <input type="text" id="fullName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required placeholder="john.doe@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="(555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">City, State</label>
+                        <input type="text" id="address" placeholder="San Francisco, CA">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="companyName">Company Name *</label>
+                    <input type="text" id="companyName" required placeholder="Tech Corp Inc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="positionTitle">Position Title *</label>
+                    <input type="text" id="positionTitle" required placeholder="Senior Software Engineer">
+                </div>
+
+                <div class="form-group">
+                    <label for="hiringManager">Hiring Manager Name (if known)</label>
+                    <input type="text" id="hiringManager" placeholder="Jane Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="jobDescription">Job Description *</label>
+                    <textarea id="jobDescription" required placeholder="Paste the job description here..." rows="6"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="yourExperience">Your Relevant Experience & Skills *</label>
+                    <textarea id="yourExperience" required placeholder="Briefly describe your relevant experience, skills, and achievements..." rows="6"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="whyCompany">Why This Company? (Optional)</label>
+                    <textarea id="whyCompany" placeholder="What attracts you to this company? (e.g., mission, culture, projects)" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Cover Letter Tone *</label>
+                    <select id="tone" required>
+                        <option value="professional">Professional & Formal</option>
+                        <option value="friendly">Friendly & Enthusiastic</option>
+                        <option value="confident">Confident & Direct</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Generate Cover Letter
+                    </button>
+                    <button type="button" id="useTemplateBtn" class="btn btn-secondary">
+                        Use Template (No AI)
+                    </button>
+                </div>
+            </form>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating your personalized cover letter...</p>
+            </div>
+
+            <div id="result" class="result-section" style="display: none;">
+                <div class="result-header">
+                    <h2>Your Cover Letter</h2>
+                    <div class="result-actions">
+                        <button id="copyBtn" class="btn btn-icon" title="Copy to clipboard">
+                            📋 Copy
+                        </button>
+                        <button id="downloadBtn" class="btn btn-icon" title="Download as text">
+                            💾 Download
+                        </button>
+                        <button id="regenerateBtn" class="btn btn-icon" title="Generate new version">
+                            🔄 Regenerate
+                        </button>
+                    </div>
+                </div>
+                <div id="coverLetterOutput" class="cover-letter-output"></div>
+                <div class="result-footer">
+                    <p class="hint">💡 Tip: Review and personalize the letter before sending</p>
+                </div>
+            </div>
+
+            <div id="error" class="error-message" style="display: none;"></div>
+
+            <div class="tips-section">
+                <h3>📝 Tips for Great Cover Letters</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Be Specific</h4>
+                        <p>Mention specific projects, achievements, or skills that match the job requirements.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Show Enthusiasm</h4>
+                        <p>Express genuine interest in the company and role. Research the company beforehand.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Keep It Concise</h4>
+                        <p>Aim for 3-4 paragraphs. Hiring managers appreciate brevity and clarity.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Proofread</h4>
+                        <p>Always review for grammar, spelling, and tone before submitting.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. AI-Powered by DeepSeek.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

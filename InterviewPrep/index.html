@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep - Practice Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Interview Prep</h1>
+            <p class="subtitle">Practice with curated interview questions tailored to your role</p>
+        </header>
+
+        <main>
+            <div class="config-section">
+                <div class="config-card">
+                    <h2>Configure Your Practice Session</h2>
+                    
+                    <div class="form-group">
+                        <label for="role">Job Role</label>
+                        <select id="role">
+                            <option value="software-engineer">Software Engineer</option>
+                            <option value="data-scientist">Data Scientist</option>
+                            <option value="product-manager">Product Manager</option>
+                            <option value="designer">UX/UI Designer</option>
+                            <option value="marketing">Marketing Manager</option>
+                            <option value="sales">Sales Representative</option>
+                            <option value="general">General/Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionType">Question Type</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="technical" value="technical" checked>
+                                Technical
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="behavioral" value="behavioral" checked>
+                                Behavioral (STAR Method)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="situational" value="situational">
+                                Situational
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficulty">Difficulty Level</label>
+                        <select id="difficulty">
+                            <option value="junior">Junior (Entry Level)</option>
+                            <option value="mid" selected>Mid-Level</option>
+                            <option value="senior">Senior</option>
+                            <option value="mixed">Mixed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="count">Number of Questions</label>
+                        <input type="number" id="count" value="5" min="1" max="20">
+                    </div>
+
+                    <button id="generateBtn" class="btn btn-primary btn-large">
+                        Generate Questions
+                    </button>
+                </div>
+            </div>
+
+            <div id="questionsSection" class="questions-section" style="display: none;">
+                <div class="questions-header">
+                    <h2>Your Interview Questions</h2>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">Question <span id="currentQuestion">0</span> of <span id="totalQuestions">0</span></p>
+                </div>
+
+                <div id="questionCard" class="question-card">
+                    <div class="question-header">
+                        <span id="questionCategory" class="category-badge"></span>
+                        <span id="questionDifficulty" class="difficulty-badge"></span>
+                    </div>
+                    <h3 id="questionText" class="question-text"></h3>
+                    
+                    <div class="answer-section">
+                        <button id="showTipsBtn" class="btn btn-secondary">
+                            💡 Show Tips
+                        </button>
+                        <div id="tipsContent" class="tips-content" style="display: none;"></div>
+                    </div>
+
+                    <div class="answer-input-section">
+                        <h4>Your Answer (Optional)</h4>
+                        <textarea id="userAnswer" placeholder="Practice writing your answer here..."></textarea>
+                        <div class="answer-actions">
+                            <button id="saveAnswerBtn" class="btn btn-icon">💾 Save</button>
+                            <button id="clearAnswerBtn" class="btn btn-icon">🗑️ Clear</button>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <button id="prevBtn" class="btn btn-secondary">← Previous</button>
+                        <button id="nextBtn" class="btn btn-primary">Next →</button>
+                    </div>
+                </div>
+
+                <div class="actions-footer">
+                    <button id="restartBtn" class="btn btn-secondary">🔄 New Session</button>
+                    <button id="exportBtn" class="btn btn-secondary">📄 Export Q&A</button>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h3>📚 Interview Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>STAR Method</h4>
+                        <p><strong>S</strong>ituation: Set the context<br>
+                           <strong>T</strong>ask: Describe the challenge<br>
+                           <strong>A</strong>ction: Explain what you did<br>
+                           <strong>R</strong>esult: Share the outcome</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Technical Questions</h4>
+                        <p>Think aloud, explain your reasoning, consider edge cases, and don't be afraid to ask clarifying questions.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Preparation</h4>
+                        <p>Research the company, review the job description, prepare questions to ask, and practice with a friend.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>During Interview</h4>
+                        <p>Listen carefully, take notes, be enthusiastic, ask for clarification if needed, and follow up afterwards.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. Prepare with Confidence.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

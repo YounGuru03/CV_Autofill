@@ -1,0 +1,58 @@
+{
+  "categories": {
+    "programming": {
+      "name": "Programming Languages",
+      "skills": ["JavaScript", "Python", "Java", "TypeScript", "C++", "Go", "Ruby", "PHP", "Swift", "Kotlin"]
+    },
+    "frontend": {
+      "name": "Frontend Development",
+      "skills": ["React", "Vue.js", "Angular", "HTML", "CSS", "Sass", "Tailwind CSS", "Next.js", "Svelte", "jQuery"]
+    },
+    "backend": {
+      "name": "Backend Development",
+      "skills": ["Node.js", "Django", "Flask", "Spring Boot", "Express.js", "FastAPI", "Ruby on Rails", "ASP.NET", "Laravel"]
+    },
+    "database": {
+      "name": "Databases",
+      "skills": ["SQL", "PostgreSQL", "MongoDB", "MySQL", "Redis", "Cassandra", "DynamoDB", "Elasticsearch", "Oracle"]
+    },
+    "cloud": {
+      "name": "Cloud & DevOps",
+      "skills": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD", "Jenkins", "Terraform", "Ansible", "Git"]
+    },
+    "data": {
+      "name": "Data Science & ML",
+      "skills": ["Machine Learning", "TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn", "R", "Tableau", "Power BI", "Spark"]
+    },
+    "soft": {
+      "name": "Soft Skills",
+      "skills": ["Leadership", "Communication", "Problem Solving", "Teamwork", "Time Management", "Adaptability", "Critical Thinking", "Creativity"]
+    },
+    "project": {
+      "name": "Methodologies & Tools",
+      "skills": ["Agile", "Scrum", "Kanban", "Jira", "Project Management", "REST APIs", "GraphQL", "Microservices", "Testing", "TDD"]
+    }
+  },
+  "learning_resources": {
+    "JavaScript": {
+      "courses": ["freeCodeCamp JavaScript", "Eloquent JavaScript (book)", "JavaScript.info"],
+      "difficulty": "beginner",
+      "time": "1-2 months"
+    },
+    "Python": {
+      "courses": ["Python.org Tutorial", "Automate the Boring Stuff", "Coursera Python for Everybody"],
+      "difficulty": "beginner",
+      "time": "1-2 months"
+    },
+    "React": {
+      "courses": ["React Official Docs", "freeCodeCamp React", "Scrimba React Course"],
+      "difficulty": "intermediate",
+      "time": "1-2 months"
+    },
+    "Machine Learning": {
+      "courses": ["Andrew Ng Coursera ML", "Fast.ai", "Google ML Crash Course"],
+      "difficulty": "advanced",
+      "time": "3-6 months"
+    }
+  }
+}

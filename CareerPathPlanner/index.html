@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Planner - Visualize Your Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Career Path Planner</h1>
+            <p class="subtitle">Visualize and plan your career progression</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-card">
+                    <h2>Choose Your Career Path</h2>
+                    
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry">
+                            <option value="technology">Technology</option>
+                            <option value="data">Data Science & Analytics</option>
+                            <option value="design">Design & Creative</option>
+                            <option value="business">Business & Management</option>
+                            <option value="marketing">Marketing & Sales</option>
+                            <option value="finance">Finance & Accounting</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="careerPath">Career Track</label>
+                        <select id="careerPath">
+                            <option value="">Select an industry first</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="currentLevel">Your Current Level</label>
+                        <select id="currentLevel">
+                            <option value="0">Entry Level / Student</option>
+                            <option value="1">Junior (0-2 years)</option>
+                            <option value="2">Mid-Level (2-5 years)</option>
+                            <option value="3">Senior (5-8 years)</option>
+                            <option value="4">Lead / Principal (8+ years)</option>
+                            <option value="5">Director / VP</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="targetLevel">Target Level</label>
+                        <select id="targetLevel">
+                            <option value="1">Junior</option>
+                            <option value="2">Mid-Level</option>
+                            <option value="3">Senior</option>
+                            <option value="4">Lead / Principal</option>
+                            <option value="5">Director / VP</option>
+                            <option value="6">Executive / C-Level</option>
+                        </select>
+                    </div>
+
+                    <button id="generatePathBtn" class="btn btn-primary btn-large">
+                        Generate Career Path
+                    </button>
+                </div>
+            </div>
+
+            <div id="pathSection" class="path-section" style="display: none;">
+                <div class="roadmap-container">
+                    <h2>Your Career Roadmap</h2>
+                    <canvas id="roadmapChart"></canvas>
+                </div>
+
+                <div class="milestones-container">
+                    <h2>Career Milestones</h2>
+                    <div id="milestones" class="milestones-grid"></div>
+                </div>
+
+                <div class="skills-container">
+                    <h2>Skills Development Path</h2>
+                    <div id="skillsPath" class="skills-grid"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <h2>Estimated Timeline</h2>
+                    <div id="timeline" class="timeline"></div>
+                </div>
+
+                <div class="resources-container">
+                    <h2>Recommended Resources</h2>
+                    <div id="resources" class="resources-grid"></div>
+                </div>
+
+                <div class="actions-container">
+                    <button id="exportPathBtn" class="btn btn-secondary">
+                        📄 Export Plan
+                    </button>
+                    <button id="savePathBtn" class="btn btn-secondary">
+                        💾 Save to Profile
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Career Optimization Suite. Plan Your Future.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
