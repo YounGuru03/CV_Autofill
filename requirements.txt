@@ -1,0 +1,27 @@
+# Career Optimization Suite - Python Dependencies
+
+# Core dependencies for all Python tools
+requests>=2.28.0
+python-dotenv>=0.19.0
+
+# Resume Optimizer dependencies
+spacy>=3.0.0
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# Optional web server dependencies (for local development)
+flask>=2.0.0
+flask-cors>=3.0.10
+
+# Installation instructions:
+# 1. Create virtual environment:
+#    python -m venv venv
+#    source venv/bin/activate  # On Windows: venv\Scripts\activate
+#
+# 2. Install all dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Download spaCy language model:
+#    python -m spacy download en_core_web_sm
+#
+# Individual tool requirements are also available in each tool's directory.
