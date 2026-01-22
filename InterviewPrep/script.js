@@ -74,11 +74,24 @@ async function generateQuestions() {
 }
 
 async function loadQuestions() {
-    const technical = await fetch('data/technical_questions.json').then(r => r.json()).catch(() => []);
-    const behavioral = await fetch('data/behavioral_questions.json').then(r => r.json()).catch(() => []);
-    const industry = await fetch('data/industry_questions.json').then(r => r.json()).catch(() => []);
-    
-    return [...technical, ...behavioral, ...industry];
+    try {
+        const technical = await fetch('data/technical_questions.json').then(r => r.json()).catch(() => []);
+        const behavioral = await fetch('data/behavioral_questions.json').then(r => r.json()).catch(() => []);
+        const industry = await fetch('data/industry_questions.json').then(r => r.json()).catch(() => []);
+        
+        const allQuestions = [...technical, ...behavioral, ...industry];
+        
+        if (allQuestions.length === 0) {
+            console.error('No questions loaded. Check that data files exist.');
+            alert('Error loading question bank. Please check that data files are present.');
+        }
+        
+        return allQuestions;
+    } catch (error) {
+        console.error('Error loading questions:', error);
+        alert('Failed to load interview questions. Please refresh the page.');
+        return [];
+    }
 }
 
 function updateQuestionDisplay() {

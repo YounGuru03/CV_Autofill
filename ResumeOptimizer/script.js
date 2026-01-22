@@ -39,13 +39,15 @@ async function handleFileUpload(event) {
 }
 
 async function extractTextFromPDF(file) {
-    showError('PDF parsing requires a backend server. For demo purposes, using filename as text.');
-    return `Sample resume content from ${file.name}. Skills: JavaScript, Python, React, Node.js, AWS, Docker, Git, Agile, SQL, MongoDB. Experience in software development with 5+ years. Bachelor's degree in Computer Science. Strong communication and problem-solving skills.`;
+    const message = 'PDF parsing requires PDF.js library or backend server. For demo: Use TXT format or manually copy resume text into "Job Description" field for analysis.';
+    showError(message);
+    return '';
 }
 
 async function extractTextFromDoc(file) {
-    showError('DOC/DOCX parsing requires a backend server. For demo purposes, using filename as text.');
-    return `Sample resume content from ${file.name}. Skills: JavaScript, Python, React, Node.js, AWS, Docker, Git, Agile, SQL, MongoDB. Experience in software development with 5+ years. Bachelor's degree in Computer Science. Strong communication and problem-solving skills.`;
+    const message = 'DOC/DOCX parsing requires server-side library. For demo: Save as TXT or manually copy resume text into "Job Description" field for analysis.';
+    showError(message);
+    return '';
 }
 
 async function analyzeResume() {
